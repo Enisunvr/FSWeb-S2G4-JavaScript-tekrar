@@ -100,27 +100,51 @@ let ucetambolunenler,
 
 // 3a çözümü
 
-/* kodlar buraya */
+enbuyuk = 0;
+enkucuk = 0;
+
+for (let i = 0; i < sayilar.length; i++) {
+  if (sayilar[i] > enbuyuk) {
+    enbuyuk = sayilar[i];
+  }
+  if (sayilar[i] < enkucuk) {
+    enkucuk = sayilar[i];
+  }
+
+  console.log(`En büyük sayi: ${enbuyuk} En küçük sayi ${enkucuk}`);
+}
 
 // 3b çözümü:
 
-/* kodlar buraya */
+ucetambolunenler = [];
+sayilar.forEach(function (sayi) {
+  if (sayi % 3 == 0) {
+    ucetambolunenler.push(sayi);
+  }
+});
 
 // 3c çözümü:
 
-/* kodlar buraya */
+ucebolunenlerintoplami = ucetambolunenler.reduce((deger, sayi) => {
+  return deger + sayi;
+}, 0);
 
 // 3d çözümü
 
-/* kodlar buraya */
+besyuzdenkucuksayilar = [];
+sayilar.filter(function (sayi) {
+  if (sayi < 500) {
+    besyuzdenkucuksayilar.push(sayi);
+  }
+});
 
 // 3e çözümü
 
-/* kodlar buraya */
+siralisayilar = [];
+
+siralisayilar = besyuzdenkucuksayilar.sort((a, b) => a - b);
 
 // 3f çözümü
-
-/* kodlar buraya */
 
 /*  Bu satırın aşağısındaki kodları lütfen değiştirmeyin  */
 
